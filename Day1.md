@@ -1,7 +1,7 @@
 
 ### [Remove Element](https://leetcode.com/problems/remove-element/)
 
-var removeElement = function(nums, val) {
+```var removeElement = function(nums, val) {
     var i=0;
     for(var j=0;j<nums.length;j++){
         if(nums[j] !== val){
@@ -10,11 +10,11 @@ var removeElement = function(nums, val) {
         }
     }
     return i
-};
+};```
 
 ### [Sort Color](https://leetcode.com/problems/sort-colors/)
 
-var sortColors = function(nums) {
+```var sortColors = function(nums) {
     var zero = 0, one = 0, two = 0
     for(var i=0;i<nums.length;i++){
         if(nums[i] === 0) zero++
@@ -25,4 +25,4 @@ var sortColors = function(nums) {
     for(var i=0;i<zero;i++) nums[i] = 0
     for(var i=zero;i<zero+one;i++) nums[i] = 1
     for(var i=zero+one;i<zero+one+two;i++) nums[i] = 2
-};
+};```
