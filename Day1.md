@@ -10,8 +10,8 @@
         }
     }
     return i
-};```
-
+};
+```
 ### [Sort Color](https://leetcode.com/problems/sort-colors/)
 
 ```var sortColors = function(nums) {
@@ -25,4 +25,5 @@
     for(var i=0;i<zero;i++) nums[i] = 0
     for(var i=zero;i<zero+one;i++) nums[i] = 1
     for(var i=zero+one;i<zero+one+two;i++) nums[i] = 2
-};```
+};
+```
