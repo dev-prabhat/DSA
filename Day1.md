@@ -1,4 +1,3 @@
-
 ## [Remove Element](https://leetcode.com/problems/remove-element/)
 
 ```
@@ -40,5 +39,26 @@ Step are:
     for(var i=0;i<zero;i++) nums[i] = 0
     for(var i=zero;i<zero+one;i++) nums[i] = 1
     for(var i=zero+one;i<zero+one+two;i++) nums[i] = 2
+};
+```
+
+## [Remove Duplicate from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
+
+```
+Step are:
+1- Using two pointer approach place one at index = 2 (outside for loop) and j=2 (inside for loop)
+2- Compare nums[j] and nums[i-2] 
+```
+
+```
+var removeDuplicates = function(nums) {
+    if(nums.length <3) return nums.length 
+    var i=2 
+    for(var j=2;j<nums.length;j++){
+        if(nums[j] !== nums[i-2]){
+            nums[i++] = nums[j]
+        }
+    }
+    return i
 };
 ```
